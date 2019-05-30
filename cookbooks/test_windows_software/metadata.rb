@@ -1,0 +1,5 @@
+name 'test_windows_software'
+description 'install and configure software for test clients'
+version '1.0.0'
+maintainer 'Kronos'
+maintainer_email 'xavier.brazeau@kronos.com'

@@ -1,16 +1,22 @@
 
 {
-  "remote_files": {
+   "remote_files": {
     "chrome": "http://dl.google.com/chrome/install/375.126/chrome_installer.exe",
     "firefox": "https://download-origin.cdn.mozilla.net/pub/firefox/releases/67.0/win64-EME-free/en-US/Firefox Setup 67.0.exe",
     "notepad++": "http://kvh-ca-kate02.ca.kronos.com:8080/userContent/software/window/npp.7.6.4.Installer.exe",
     "zulu": "http://kvh-ca-kate02.ca.kronos.com:8080/userContent/software/window/zulu8.15.0.1-jdk8.0.92-win_x64.msi"
   },
-  "runlists": [
-    "recipe[starter::notepad]",
-    "recipe[starter::chrome]",
-    "recipe[starter::firefox]",
-    "recipe[starter::uninstall_oracle]",
-    "recipe[starter::zulu]"
+  "file_paths": {
+    "chrome": "C:\\Users\\sldev\\Documents\\chrome_installer.exe",
+    "firefox": "C:\\Users\\sldev\\Documents\\Firefox_Installer.exe",
+    "notepad++": "C:\\Users\\sldev\\Documents\\notepad++_installer.exe",
+    "zulu": "C:\\Users\\sldev\\Documents\\zulu_installer.msi"
+  },
+  "run_list": [
+    "recipe[test_windows_software::notepad]",
+    "recipe[test_windows_software::chrome]",
+    "recipe[test_windows_software::firefox]",
+    "recipe[test_windows_software::uninstall_oracle]",
+    "recipe[test_windows_software::zulu]"
   ]
 }
